@@ -10,6 +10,7 @@ module.exports = {
       },
       fontFamily: {
         display: ['"Lilita One"', "system-ui", "cursive"],
+        poster: ['"Anton"', "system-ui", "sans-serif"],
         mono: ['"Space Mono"', "ui-monospace", "monospace"],
       },
       keyframes: {
