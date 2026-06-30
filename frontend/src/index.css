@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0a0a0a;
+  --paper: #ffffff;
+  --slop: #ff0000;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Space Mono", ui-monospace, monospace;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* selection in brand red */
+::selection {
+  background: var(--slop);
+  color: #fff;
+}
+
+/* grain / noise overlay for the black poster panel */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* hard chunky outline used on the poster wordmark */
+.poster-shadow {
+  text-shadow: 5px 5px 0 var(--slop);
+}
+
+.scribble {
+  stroke: var(--slop);
+  stroke-width: 7;
+  fill: none;
+  stroke-linecap: round;
+}
+
+/* hide scrollbar but keep scroll */
+.no-bar::-webkit-scrollbar {
+  display: none;
+}
+.no-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
