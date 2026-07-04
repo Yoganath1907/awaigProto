@@ -32,3 +32,15 @@ Anti-polished, hard-edged (no rounded SaaS cards), bold typography, thick black 
 - P1: Profile / Liked / Following destination views (currently nav toggles active state only)
 - P2: Post detail / lightbox view, swipe gestures for Pass/Trash on mobile
 - P2: Light empty-state + skeleton loaders for images
+
+## Update — June 2026: Playful design pass
+User asked for a more playful, gen-z, intentional look (no copy changes, no animations, content-first).
+Implemented (static styling only):
+- Hard offset shadows + press-down active states on all buttons (login providers, follow, pass/trash/share)
+- Subtle dot-grid "notebook paper" background on login right panel + feed page background
+- Login card restyled as a taped-on sticker card (tape strip, black border, red hard shadow)
+- Hand-drawn white squiggle under "Gets", red starburst glyph top-right of black panel
+- "certified weird" rotated sticker chip on the branding panel
+- "Sign in*" asterisk tied to the footnote disclaimer
+- Feed: tilted sticker avatars, rotated "#01" stamp chips on post images, red-bordered rotated "the junk drawer" chip, red squiggle divider at feed bottom
+Verified via screenshots (login desktop, feed desktop + mobile).

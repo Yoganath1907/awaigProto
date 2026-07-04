@@ -26,6 +26,14 @@ export function DiscordGlyph(props) {
   );
 }
 
+export function Starburst(props) {
+  return (
+    <svg viewBox="0 0 40 40" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M20 0l3.5 12.1L34 5.9l-6.2 10.5L40 20l-12.2 3.5L34 34.1l-10.5-6.2L20 40l-3.5-12.1L6 34.1l6.2-10.6L0 20l12.2-3.5L6 5.9l10.5 6.2z" />
+    </svg>
+  );
+}
+
 export function XGlyph(props) {
   return (
     <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" {...props}>

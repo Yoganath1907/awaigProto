@@ -55,6 +55,27 @@ body {
   stroke-linecap: round;
 }
 
+/* hard offset shadows — brutalist-fun */
+.hard-shadow {
+  box-shadow: 4px 4px 0 var(--ink);
+}
+.hard-shadow-red {
+  box-shadow: 5px 5px 0 var(--slop);
+}
+
+/* subtle notebook dot-grid paper */
+.dotgrid {
+  background-image: radial-gradient(rgba(10, 10, 10, 0.14) 1.2px, transparent 1.2px);
+  background-size: 22px 22px;
+}
+
+/* scrapbook tape strip */
+.tape {
+  background: rgba(10, 10, 10, 0.08);
+  border-left: 2px dashed rgba(10, 10, 10, 0.25);
+  border-right: 2px dashed rgba(10, 10, 10, 0.25);
+}
+
 /* hide scrollbar but keep scroll */
 .no-bar::-webkit-scrollbar {
   display: none;
